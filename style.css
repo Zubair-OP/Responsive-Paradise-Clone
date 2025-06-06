@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+header {
+  width: 100%;
+  background-color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+header.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo img {
+  height: 60px;
+}
+
+
+.list ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  white-space: nowrap;
+  flex-wrap: wrap;
+}
+
+.list ul li {
+  position: relative;
+}
+
+.list ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  color: #333;
+  padding: 8px 10px;
+}
+
+
+.h1 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 40px;
+  padding: 20px;
+}
+
+
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.dad {
+  width: 90%;
+  margin: auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  overflow-x: hidden;
+}
+
+.top-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.right, .left {
+  flex: 1 1 300px;
+  max-width: 400px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left p, .right p {
+  text-align: center;
+  font-size: 26px;
+  color: rgb(51, 51, 51);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.features p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 10px;
+  border-left: 4px solid #4CAF50;
+  background-color: #f9f9f9;
+  border-radius: 0 5px 5px 0;
+}
+
+.video-container {
+  width: 100%;
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.Pic {
+  position: relative;
+  background-image: url('Despedidas-de-Soltera-y-Soltero-2.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  font-weight: 400;
+}
+
+.line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: transparent;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  max-width: 90%;
+  width: 70%;
+}
+
+.text {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+
+.pr {
+  width: 80%;
+  margin: auto;
+}
+.pr h2 {
+  margin-top: 30px;
+}
+
+.pr p {
+  padding: 10px 0;
+  font-size: 14px;
+}
+.pr b {
+  font-size: 14px;
+}
+
+.pr h6 {
+  color: rgb(0, 0, 0);
+}
+.card-container {
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+}
+
+.card-container h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card-slider {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  box-shadow: 0px 0px 5px gray;
+}
+
+.slides-wrapper {
+  display: flex;
+  width: 300%; /* 3 images * 100% */
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  object-fit: cover; /* or 'contain' if you want full image without crop */
+}
+
+
+/* Navigation buttons */
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 25px;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+button.prev {
+  left: 10px;
+}
+button.next {
+  right: 10px;
+}
+
+footer {
+  background: rgb(0, 0, 0);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* Optional: for responsiveness */
+  padding: 20px;
+  width: 90%;
+  margin: auto;
+  gap: 20px; /* optional spacing between columns */
+}
+
+.f1 h3 {
+  color:rgb(255, 204, 0);
+  text-decoration: none;
+  margin: 15px 0px;
+}
+
+.f1 ul li a {
+  color: #f9f9f9;
+  font-size: 14px;
+}
+
+.bottom {
+  background-color: rgb(0, 0, 0);
+  height:50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+align-items: center;
+width: 80%;
+margin: auto;
+}
+
+.bottom p {
+  font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right,
+  .left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .video-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .list {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    background-color: rgb(234, 228, 228);
+    height: calc(100vh - 80px);
+    transition: all 0.3s ease;
+    z-index: 100;
+  }
+
+  .list.active {
+    left: 0;
+  }
+
+  .list ul {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .list ul li .submenu {
+    position: static;
+    box-shadow: none;
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+
+  .list ul li a {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+
+  .h1 {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .features p {
+    font-size: 16px;
+  }
+
+  .Pic {
+    display: none;
+  }
+}
