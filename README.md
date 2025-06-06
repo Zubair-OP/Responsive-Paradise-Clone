@@ -54,7 +54,7 @@ This project uses **media queries** and **flexbox layout techniques** to ensure 
 
 1. Clone this repo:
 
-
+Link : https://github.com/Zubair-OP/Responsive-Paradise-Clone
 
 2. Open the project in your code editor.
 
